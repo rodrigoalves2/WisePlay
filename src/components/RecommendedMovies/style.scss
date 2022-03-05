@@ -1,0 +1,44 @@
+#movie-recommendations {
+  margin-top: 20px;
+
+  h3 {
+    font-weight: 400;
+  }
+
+  .movies-scroller {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .recommendation-card {
+    width: 185px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+      box-shadow: 0 0 1rem #243b55;
+    }
+  }
+
+  .recommendation-poster {
+    border-radius: 10px 10px 0 0;
+    width: 185px;
+    height: 278px;
+    object-fit: cover;
+  }
+
+  .recommendation-title {
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+  }
+}

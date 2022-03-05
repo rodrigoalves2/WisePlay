@@ -1,0 +1,26 @@
+#movie-videos {
+  margin-top: 20px;
+
+  h3 {
+    font-weight: 400;
+  }
+
+  .videos-scroller {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .video-card {
+    width: 560px;
+    height: 315px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .video {
+    width: 560px;
+    height: 315px;
+  }
+}

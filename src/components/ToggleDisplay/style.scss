@@ -1,0 +1,17 @@
+#toggle-display {
+  display: flex;
+  gap: 8px;
+
+  .icon-button {
+    background-color: #243b55;
+    border-color: #141e30;
+
+    &:not(:disabled)::active {
+      background-color: #141e30;
+    }
+  }
+
+  .active {
+    background-color: #141e30;
+  }
+}

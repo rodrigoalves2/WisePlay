@@ -1,0 +1,20 @@
+#pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #f1f1f1;
+
+  .icon-pagination {
+    background-color: #141e30;
+    border-color: #243b55;
+    opacity: 0.75;
+
+    &:not(:disabled):active {
+      background-color: #243b55;
+    }
+
+    &:disabled {
+      opacity: 0.2;
+    }
+  }
+}

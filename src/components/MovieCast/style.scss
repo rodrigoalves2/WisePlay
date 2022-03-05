@@ -1,0 +1,40 @@
+#movie-cast {
+  margin-top: 20px;
+
+  h3 {
+    font-weight: 400;
+  }
+
+  .cast-scroller {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .cast-card {
+    width: 140px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .cast-profile {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+  }
+
+  .cast-name {
+    font-weight: bold;
+    padding: 5px 5px 0 5px;
+  }
+
+  .character {
+    padding: 0 5px;
+    font: 300 14px Poppins, sans-serif;
+  }
+}
