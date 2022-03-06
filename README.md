@@ -1,7 +1,7 @@
 <p align="center">
   <img
   alt="WisePlay logo"
-  src="https://raw.githubusercontent.com/rodrigoalves2/WisePlay/master/src/assets/images/logo-removebg.png?token=GHSAT0AAAAAABLVBUKBPMINNHQBIL4QGSNSYREBTRA"/>
+  src="src/assets/images/logo-removebg.png"/>
 </p>
 
 # WisePlay
