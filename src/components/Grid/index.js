@@ -19,7 +19,7 @@ export function Grid({ movies }) {
             <div className='movie-card' key={movie.id} onClick={() => movieInfo(movie.id)}>
               <img
                 className='movie-poster'
-                src={movie.poster_path ? ('https://image.tmdb.org/t/p/w500' + movie.poster_path) : (defaultImage)}
+                src={movie.poster_path ? ('https://image.tmdb.org/t/p/original' + movie.poster_path) : (defaultImage)}
                 alt="Poster do filme"
                 loading='lazy'
               />
