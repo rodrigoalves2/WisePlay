@@ -28,9 +28,9 @@ $ npm install
 $ yarn install
 
 # Run the application in development mode
-$ npm run dev
+$ npm start
   or
-$ yarn run dev
+$ yarn start
 
 # The server will start on port:3000 - acess http://localhost:3000
 ```
