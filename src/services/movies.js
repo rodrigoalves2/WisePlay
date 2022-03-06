@@ -103,3 +103,16 @@ export const getSimilarMovies = async (movieId) => {
 
   return data;
 }
+
+export const listMoviesByGenre = async (page, movieGenre) => {
+  let data = null;
+  try {
+    const response = await api.get(`/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=pt-BR&page=${page}&with_genres=${movieGenre}`);
+
+    data = response.data;
+  } catch (error) {
+    console.log(error)
+  }
+
+  return data;
+}

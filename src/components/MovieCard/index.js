@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Star, OpenInNew } from '@mui/icons-material';
 
@@ -100,7 +101,7 @@ export function MovieCard({ movie, movieId }) {
             {
               movie.genres?.map(genre => {
                 return (
-                  <div className='movie-genre' key={genre.id}>{genre.name}</div>
+                  <Link to={`../movies/${genre.id}`} className='movie-genre' key={genre.id}>{genre.name}</Link>
                 )
               })
             }
