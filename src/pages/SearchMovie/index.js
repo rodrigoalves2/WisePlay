@@ -10,6 +10,8 @@ import { ToggleDisplay } from 'components/ToggleDisplay';
 
 import { searchMovie } from 'services/movies';
 
+import './style.scss';
+
 export function SearchMovie() {
   const params = useParams();
   const movie = params.movie;
@@ -42,25 +44,33 @@ export function SearchMovie() {
 
   return (
     <div id='search-page'>
-      <div className='popular-movies'>
-        <div className="row">
-          <Pagination page={searchPage} totalPages={movies.total_pages} changePage={changePage} />
+      {
+        movies.results?.length === 0 ? (
+          <div className='no-results'>
+            Nenhum resultado encontrado para <span className='movie-search'>"{movie}"</span>
+          </div>
+        ) : (
+          <div className='popular-movies'>
+            <div className="row">
+              <Pagination page={searchPage} totalPages={movies.total_pages} changePage={changePage} />
 
-          <ToggleDisplay display={display} toggleDisplay={toggleDisplay} />
-        </div >
+              <ToggleDisplay display={display} toggleDisplay={toggleDisplay} />
+            </div >
 
-        <div className='movies'>
-          {
-            movies.results ? (
-              display === 'grid' ? <Grid movies={movies.results} /> : <List movies={movies.results} />
-            ) : (
-              <div className='loading'>
-                <div className='loader'></div>
-              </div>
-            )
-          }
-        </div>
-      </div>
+            <div className='movies'>
+              {
+                movies.results ? (
+                  display === 'grid' ? <Grid movies={movies.results} /> : <List movies={movies.results} />
+                ) : (
+                  <div className='loading'>
+                    <div className='loader'></div>
+                  </div>
+                )
+              }
+            </div>
+          </div >
+        )
+      }
     </div >
   );
 }

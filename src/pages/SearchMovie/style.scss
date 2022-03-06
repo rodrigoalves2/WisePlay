@@ -1,0 +1,14 @@
+#search-page {
+  .no-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .movie-search {
+    color: #fa6900;
+  }
+}
